@@ -11,8 +11,8 @@ Created an express framework connecting to MongoDB.
 1. Created an Express Framework
 2. Connected to MongoDB
 
-[See MongoDB] (https://cloud.mongodb.com/)
+[See MongoDB](https://cloud.mongodb.com/)
 
-[See Express] (https://expressjs.com/)
+[See Express](https://expressjs.com/)
 
-![screen shot](https://upload.wikimedia.org/wikipedia/commons/b/be/Bicho-pregui%C3%A7a_3.jpg)
+![screen shot](https://www.rainforest-alliance.org/wp-content/uploads/2021/06/three-toed-sloth-teaser-1.jpg.optimal.jpg)
