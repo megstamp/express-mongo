@@ -25,10 +25,15 @@ export async function deletePlant (req, res) {
 
 //CRUD: Update - patch
 export async function updatePlant (req, res) {
+
     const docId = { "_id": new ObjectId(req.params.docId)};
-    const updatePlant = req.body;
-    await coll.findOneAndUpdate(
-        { "_id": docId},
-        { $set: {updatePlant}}); 
-    res.status(201).send({message: "plant has been updated"});
+    const updatePlant = { $set: req.body};
+    const returnOption = { returnNewDocument: true};
+
+    const query = await coll.findOneAndUpdate (docId, updatePlant, returnOption);
+    // await coll.findOneAndUpdate(
+    //     { "_id": docId},
+    //     { $set: {updatePlant}}); 
+    res.status(201).send({message: "plant has been updated"})
+    console.table(query.value);
 }
